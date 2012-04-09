@@ -16,8 +16,8 @@ var http = require('http')
   , opt  = require('parseopt')
   , io   = require('socket.io');
 
-var VogueClient = require('./VogueClient').VogueClient
-  , Watcher     = require('./Watcher').Watcher;
+var VogueClient = require('../lib/VogueClient').VogueClient
+  , Watcher     = require('../lib/Watcher').Watcher;
 
 var options = getOptions()
   , server  = http.createServer(handleHttpRequest)

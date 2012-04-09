@@ -1,21 +1,21 @@
 {
   "name": "vogue",
   "description": "Auto-reload stylesheets in web browser whenever the CSS files are saved.",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "homepage": "http://github.com/andrewdavey/vogue",
   "repository": "http://github.com/andrewdavey/vogue.git",
   "author": "Andrew Davey <andrew@equin.co.uk> (http://aboutcode.net/)",
-  "directories": {
-    "lib": ""
-  },
+  "contributors": [
+    { "name": "Bernhard K. Weisshuhn", "email": "bkw@codingforce.com" }
+  ],
   "engines": {
     "node": "*"
   },
   "bin": {
-    "vogue": "./vogue.js"
+    "vogue": "./bin/vogue.js"
   },
   "dependencies": {
-    "socket.io": "0.7.x",
+    "socket.io": ">= 0.9.x",
     "parseopt": ">=1.0.0"
   }
 }
