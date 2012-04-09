@@ -232,7 +232,7 @@
         src = scripts[i].getAttribute("src");
         if (src && src.slice(-15) === 'vogue-client.js') break;
       }
-      rootUrl = src.match(/^https?\:\/\/(.*?)\//)[0];
+      rootUrl = src.match(/^(((.*?\:)?\/\/)?(.*?))\//)[0];
       // There is an optional base argument, that can be used.
       baseMatch = src.match(/\bbase=(.*)(&|$)/);
 
